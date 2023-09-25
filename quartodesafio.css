@@ -1,88 +1,209 @@
-body {
-  background-color: brown;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin: 60px;
-}
-main {
-  height: 500px;
-  text-align: center;
-}
-h1 {
-  height: 100px;
-  color: blueviolet;
-  font-weight: 200rem;
-  text-align: center;
-  padding: 16px;
+:root { --cor-site: #F5888D;
   text-transform: uppercase;
-  text-shadow:  -1px 1px 0 white;
-                -2px 2px 0 white;
-                -5px 5px 0 white;
-                -7px 7px 0 white;
+  margin: 0;
+  padding: 0;
 }
 
-.cards_container {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 16px;
-  height: 280px;
-  width: fit-content;
+html {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.maxWidth {max-width: 90em;}
+
+body {background-color:#9ADFBB ;}
+
+header {
   text-align: center;
-  flex-wrap: wrap;
-
-}
-.cards {
-  background-color: blueviolet;
-  color: aliceblue; 
-  padding: 16px;
-  box-sizing: border-box;
-  margin-bottom: 16px;
-  width: 280px;
-  border-left: 7px;
-  border-right: 5px;
-  border-radius: 2px;
-  flex-wrap: wrap;
-}
-cards_container div {
-  height: 250px;
-  width: 80%; 
-}
-
-.tamanho {
-  display: inline;
-  height: 80%;
-  width: 250px; 
-}
-
-
-footer {
-  background-color: blueviolet;
-  padding: 16px;
-  text-align: center;
-  text-shadow: -1px 1px 0 white;
-               -2px 2px 0 white;
-               -5px 5px 0 white;
-               -7px 7px 0 white; 
- font-weight: 300px;
- flex-wrap: wrap;
+  margin: auto;
+  font-family: fantasy;
   
 }
 
+.headr_logo {
+  width: 5.9em;
+  height: 100px;
+  margin: 1em;
+}
 
-@media (max-whidth: 800px) {
-  .cards {
-    flex-direction: column;
+.headr_nav {
+  background-color: var(--cor-site);
+}
+
+ul {
+  margin: 0;
+  border-radius: 5px;
+}
+
+.headr_nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .8em;
+  text-align: center;
+}
+
+.headr_nav a{
+  color: #6f8b4f;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+.headr_nav a:hover{
+  background-color: color-mix(in srgb, var(--cor-site) , #F422E4 80% );
+}
+
+@media screen and (min-width: 48em) {
+  .headr {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    
   }
-  .cards_container {
-    flex-direction: column;
-    align-items: center;
-  } 
-  footer {
-    flex-direction: column;
-    align-items: center;
+  .headr_logo {
+    margin-left: 2em;
+  }
+  .headr_nav {
+    background-color: initial;
+  }
+  .headr_nav ul {
+    margin-right: 2em;
+    font-size: .9em;
+  }
+  .headr_nav li {
+    display: inline-block;
+  }
+  .headr_nav a {
+    color: var(--cor-site);
+    border-radius: 5px;
+  }
+  .headr_nav a:hover{
+    background-color: color-mix(in srgb,var(--cor-site), #F422E4 80%);
   }
 }
 
+.trailer {
+  background-color:#CCDFBB ;
+  padding-bottom: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  line-height: 1.5em;
+  font-style: oblique;
+  
+}
 
+.trailer div {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
 
+.trailer_title {
+  margin-top: 0;
+  padding-top: .5em;
+  color: var(--cor-site);
+  font-style: italic;
+}
+
+.trailer h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+
+}
+.trailer_paragrafo {
+  font-size: 1.1em;
+}
+
+.trailer_botão {
+  display: inline-block;
+  background-color: var(--cor-site);
+  margin-top: 1em;
+  padding:  1em 2em;
+  border-radius: 8px;
+  text-decoration: none;
+  color: brown;
+  text-transform: uppercase;
+
+}
+.trailer_botão_article {
+  display:inline-block;
+  background-color: var(--cor-site);
+  margin-top: 1em;
+  padding:  1em 2em;
+  border-radius: 8px;
+  text-decoration: none;
+  color: brown;
+  text-transform: uppercase;
+}
+  
+.trailer_botão:hover {
+  background-color: color-mix(in srgb,var(--cor-site), #F422E4 80%);
+  }
+
+.trailer_botão_article:hover {
+  background-color: color-mix(in srgb,var(--cor-site), #F422E4 80%);
+  }
+
+@media screen and (min-width:48em) {
+  .trailer {
+    background-image:url(imagem/coen-van-de-broek-MYFA2GyHthw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: initial;
+  }
+
+  .trailer_paragrafo {
+    margin-bottom: 2em;
+  } 
+ 
+}
+  
+.main_content{
+  background-color:#9ADFBB ;
+  text-align:center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  align-items: flex-start;
+  font-family: cursive;
+}
+
+.main_content div {
+  margin: auto;
+  padding: 1em;
+  width: 100%;
+}
+.main_content_title {
+  color: var(--cor-site)
+}
+.icon_img {
+  width: 5.5em;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+ 
+  }
+.col{
+  flex: 1 0 auto;
+  width: 100%; 
+}
+
+.col-12{
+  width: 100%;
+  background-color:#F2C4B2 ;
+}
+
+@media screen and (min-width: 48em) {
+  .col-6(width: calc(50% - 2rem);
+    
+    }
+}
+
+footer {
+  background-color: var(--cor-site);
+  padding: 1em;
+ display: flex;}
+  
+
+  
