@@ -1,11 +1,7 @@
 :root { --cor-site: #F5888D;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-}
+text-transform: uppercase;}
 
-html {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+html {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 
 .maxWidth {max-width: 90em;}
 
@@ -15,7 +11,6 @@ header {
   text-align: center;
   margin: auto;
   font-family: fantasy;
-  
 }
 
 .headr_logo {
@@ -51,6 +46,9 @@ ul {
 
 .headr_nav a:hover{
   background-color: color-mix(in srgb, var(--cor-site) , #F422E4 80% );
+}
+.icon_img{
+  transition: 0.8s;
 }
 
 @media screen and (min-width: 48em) {
@@ -145,7 +143,7 @@ ul {
 
 @media screen and (min-width:48em) {
   .trailer {
-    background-image:url(imagem/coen-van-de-broek-MYFA2GyHthw-unsplash.jpg);
+    background-image:url(imagem/marianna-lutkova-4PSLAKVQQ88-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -170,13 +168,14 @@ ul {
 .main_content div {
   margin: auto;
   padding: 1em;
-  width: 100%;
+  width: 80%;
 }
 .main_content_title {
   color: var(--cor-site)
 }
 .icon_img {
   width: 5.5em;
+  transition: 0.8s;
 }
 .row {
   display: flex;
@@ -203,7 +202,7 @@ ul {
 footer {
   background-color: var(--cor-site);
   padding: 1em;
- display: flex;}
+  text-align: center;
+}
   
 
-  
